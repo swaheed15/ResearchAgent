@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Retrieve the PubMed API Key
-pubmed_api_key = os.getenv("PUBMED_API_KEY")
+pubmed_api_key = st.secrets["PUBMED_API_KEY"]
 
 # Ensure the API key is available for PubMed
 if not pubmed_api_key:
